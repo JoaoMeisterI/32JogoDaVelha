@@ -1,0 +1,115 @@
+/* para usar matrizes de alguma forma
+usar o display: grid e grid template colums e grid template rows */
+body{
+    font-size: 80px;
+    text-align: center;
+    background-color: #F0A868;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Bebas Neue', cursive;
+    
+    
+
+    
+    
+
+}
+h1{
+    font-size: 5vh;
+    opacity: 0;
+    animation: titulo 2s ease-in-out forwards;
+    color: #6A8D73;
+    
+}
+
+#tabuleiro{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  margin: 0 auto;
+  width: 55vh;
+  height: 55vh;
+  margin-top: 16vh;
+  
+ 
+    
+}
+
+.blocos{
+    border-radius: 5px;
+    border: 10px solid #6A8D73;
+    box-shadow: px 1px 1px black;
+    
+   
+}
+
+
+#bloco1{
+    background-color: #E4FFE1;     
+}
+
+#bloco2{
+    background-color: #E4FFE1;   
+}
+
+#bloco3{
+    background-color: #E4FFE1;  
+}
+
+
+#bloco4{
+    background-color: #E4FFE1;   
+}
+
+#bloco5{
+    background-color: #E4FFE1;   
+}
+
+#bloco6{
+    background-color: #E4FFE1;
+  
+}
+
+
+#bloco7{
+    background-color: #E4FFE1;
+    
+}
+#bloco8{
+    background-color: #E4FFE1;
+}
+
+#bloco9{
+    background-color: #E4FFE1;
+}
+.blocos:active{
+    animation: tremeItem 0.5s;
+}
+
+@keyframes tremeItem{
+    0% {
+        transform: rotate(-5deg);
+      }
+      50% {
+        transform: rotate(5deg);
+      }
+      100% {
+        transform: rotate(-5deg);
+      }
+    
+
+
+
+}
+
+@keyframes titulo{
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+}
